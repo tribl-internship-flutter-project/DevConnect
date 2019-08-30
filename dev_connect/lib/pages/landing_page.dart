@@ -9,6 +9,7 @@ import '../model/last_course_studied.dart';
 import '../utils/last_studied_book_tile.dart';
 import '../image_asset.dart';
 import '../styles/colors.dart';
+import './second_home_screen.dart';
 
 class LandingPage extends StatelessWidget {
   @override
@@ -44,13 +45,22 @@ class LandingPage extends StatelessWidget {
                     // Put space between the menu and search box
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      // Harmburger icon
-                      Icon(Icons.menu, color: tertiaryTextColor),
+                      InkWell(
+                        child: // Harmburger icon
+                            Icon(Icons.menu, color: tertiaryTextColor),
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SecondHomeScreen()));
+                        },
+                      ),
+
                       // Search icon
                       Icon(
                         Icons.search,
                         color: tertiaryTextColor,
-                      )
+                      ),
                     ],
                   ),
                 ),
