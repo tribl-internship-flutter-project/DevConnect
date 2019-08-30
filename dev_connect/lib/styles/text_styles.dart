@@ -16,4 +16,18 @@ TextStyle headingOneTextStyle =
 TextStyle headingTwoTextStyle = TextStyle(
     fontSize: 14, color: Colors.grey.shade900, fontWeight: FontWeight.bold);
 TextStyle bodyTextStyle = TextStyle(
-    fontSize: 14, color: Colors.grey.shade600, fontWeight: FontWeight.bold);
+  fontSize: 14,
+  color: Colors.grey.shade600,
+);
+TextStyle newCourseTextStyle =
+    TextStyle(fontSize: 26, color: Colors.white, fontWeight: FontWeight.w700);
+TextStyle newCourseNameTextStyle = TextStyle(
+  fontSize: 20,
+  color: Colors.white,
+  fontWeight: FontWeight.w700,
+);
+TextStyle viewWhiteTextStyle = TextStyle(
+  fontSize: 14,
+  color: firstColor,
+  fontWeight: FontWeight.bold,
+);

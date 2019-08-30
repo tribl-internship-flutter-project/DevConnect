@@ -31,3 +31,4 @@ final lastStudiedCourses = [
       studyProgress: 0.10,
       imagePath: book_react),
 ];
+final popularWithFriends = [django, css, web_dev];

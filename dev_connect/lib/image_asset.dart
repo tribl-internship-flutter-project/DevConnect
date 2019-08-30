@@ -11,3 +11,7 @@ const String book_python = 'assets/books/python.jpg';
 const String book_react = 'assets/books/react.jpg';
 const String connect = 'assets/developers/social_media.jpg';
 const String system = 'assets/developers/tabs.jpg';
+
+const String django = 'assets/books/django.jpg';
+const String css = 'assets/books/css.jpg';
+const String web_dev = 'assets/books/web_dev.jpg';
