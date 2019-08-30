@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import '../styles/text_styles.dart';
+import 'package:flutter/material.dart';
 
 class ContentHeadingWidget extends StatelessWidget {
   final String heading;
