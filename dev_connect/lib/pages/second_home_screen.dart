@@ -5,6 +5,8 @@ import '../styles/colors.dart';
 import '../utils/content_heading.dart';
 import '../utils/popular_with_friends_course.dart';
 import '../model/last_course_studied.dart';
+import '../hyperlink.dart';
+import '../quiz/third_home_screen.dart';
 
 class SecondHomeScreen extends StatelessWidget {
   @override
@@ -87,9 +89,9 @@ class SecondHomeScreen extends StatelessWidget {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(4)),
                               ),
-                              child: Text(
+                              child: HyperLink(
+                                'https://www.w3schools.com/js/default.asp',
                                 'View',
-                                style: newCourseTextStyle,
                               ),
                             ),
                           ),
@@ -136,9 +138,27 @@ class SecondHomeScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  ContentHeadingWidget(
-                    heading: 'Continue Reading',
+                  // ContentHeadingWidget(
+                  //   heading: 'Continue Reading',
+                  // ),
+                  // ================Tetiary screen========================
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 16),
+                    child: InkWell(
+                      child: Text(
+                        'Try This Quiz!',
+                      ),
+                      onTap: () => {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ThirdHomeScreen()),
+                        ),
+                      },
+                    ),
                   ),
+
                   Expanded(
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 16),

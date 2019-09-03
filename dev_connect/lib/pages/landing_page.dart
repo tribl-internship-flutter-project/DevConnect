@@ -10,6 +10,7 @@ import '../utils/last_studied_book_tile.dart';
 import '../image_asset.dart';
 import '../styles/colors.dart';
 import './second_home_screen.dart';
+import '../hyperlink.dart';
 
 class LandingPage extends StatelessWidget {
   @override
@@ -82,6 +83,7 @@ class LandingPage extends StatelessWidget {
                               imagePath: dev1,
                               ranking: 40,
                               showRanking: true,
+                              isOnline: true,
                             ),
                             // Name of developer
                             Padding(
@@ -150,12 +152,16 @@ class LandingPage extends StatelessWidget {
                       ContentHeadingWidget(
                         heading: "Last Books Studied",
                       ),
+
                       for (var i = 0; i < lastStudiedCourses.length; i++)
                         LastStudiedBookTile(
                           lastStudiedCourse: lastStudiedCourses[i],
                           screenWidth: screenWidth,
                           studyProgress: lastStudiedCourses[i].studyProgress,
                         ),
+                      HyperLink('https://www.w3schools.com/js/default.asp',
+                          'Awesome site'),
+
                       ContentHeadingWidget(
                         heading: "Friends",
                       ),
