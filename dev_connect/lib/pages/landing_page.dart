@@ -150,7 +150,7 @@ class LandingPage extends StatelessWidget {
                       ),
                       // ====================Content Heading==================
                       ContentHeadingWidget(
-                        heading: "Last Books Studied",
+                        "Last Books Studied",
                       ),
 
                       for (var i = 0; i < lastStudiedCourses.length; i++)
@@ -159,11 +159,10 @@ class LandingPage extends StatelessWidget {
                           screenWidth: screenWidth,
                           studyProgress: lastStudiedCourses[i].studyProgress,
                         ),
-                      HyperLink('https://www.w3schools.com/js/default.asp',
-                          'Awesome site'),
+                      HyperLink('https://www.udemy.com/', 'Read More'),
 
                       ContentHeadingWidget(
-                        heading: "Friends",
+                        "Friends",
                       ),
                     ],
                   ),

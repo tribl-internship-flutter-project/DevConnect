@@ -111,7 +111,7 @@ class SecondHomeScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: ContentHeadingWidget(
-                    heading: 'Popular With Friends',
+                    'Popular With Friends',
                   ),
                 ),
                 Expanded(

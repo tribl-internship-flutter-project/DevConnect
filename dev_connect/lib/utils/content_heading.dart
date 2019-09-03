@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ContentHeadingWidget extends StatelessWidget {
   final String heading;
-  ContentHeadingWidget({Key key, @required this.heading}) : super(key: key);
+  ContentHeadingWidget(this.heading);
   @override
   Widget build(BuildContext context) {
     return Padding(
